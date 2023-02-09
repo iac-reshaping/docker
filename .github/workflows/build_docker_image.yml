@@ -18,7 +18,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          registry: gchr.io
+          registry: ghcr.io
           tags: ghcr.io/iac-reshaping/docker/builder:v1.0.0,ghcr.io/iac-reshaping/docker/builder:latest
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
